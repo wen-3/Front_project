@@ -84,7 +84,6 @@
 
         #navbar_Logo {
             width: 100vw;
-            height: 20vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -590,7 +589,7 @@
             const navbarTop = $(".Navbar_section").offset();
 
             $(document).scroll(function () {
-                if ($(document).scrollTop() >= navbarTop.top) {
+                if ($(document).scrollTop() > navbarTop.top) {
                     $(".Navbar_section").addClass("fixed");
                 } else {
                     $(".Navbar_section").removeClass("fixed");
