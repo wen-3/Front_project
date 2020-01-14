@@ -631,7 +631,6 @@
         $(document).ready(function () {
             // 取得導覽列元素頂端位置
             const navbarTop = $(".Navbar_section").offset();
-
             $(document).scroll(function () {
                 if ($(document).scrollTop() > navbarTop.top) {
                     $(".Navbar_section").addClass("fixed");
