@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>集團品牌合併</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 auto;
+            background-color: rgb(219, 189, 150);
+            color: rgb(94, 66, 30);
+            overflow-x: hidden;
+        }
+
+        .Navbar_section {
+            background-color: rgb(219, 189, 150);
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0px;
+            z-index: 20;
+        }
+
+        .navbar_Logo {
+            width: 100vw;
+            height: 20vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbarlogo_container {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbarlogo_img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            background-size: cover;
+        }
+
+        #navbar {
+            margin: 0 auto;
+            border: 1px solid rgb(94, 66, 30);
+            margin-top: 10px;
+        }
+
+        .col_padding {
+            display: flex;
+            justify-content: center;
+        }
+
+        #navbar .col_padding {
+            padding: 0 40px;
+        }
+
+        .title_contain {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+
+        }
+
+        .icon_img {
+            float: right;
+        }
+
+        .main_img {
+            width: 100%;
+        }
+
+        .section button {
+            margin: 20px 0px;
+            color: rgb(167, 75, 39);
+            border-color: rgb(167, 75, 39);
+            padding: 5px 30px;
+        }
+
+        .col_padding_sec2 {
+            margin: auto;
+        }
+
+        .section_2 p {
+            text-align: justify;
+            margin: 25px auto;
+            line-height: 40px;
+        }
+
+        .section_3 {
+            margin: 30px;
+        }
+
+        .section_3 .text_contain {
+            margin: auto;
+            text-align: center;
+        }
+
+
+        .tab_content {
+            opacity: 0;
+            pointer-events: none;
+            height: 0;
+            overflow: hidden;
+            transition: 1s opacity;
+        }
+
+        .tab_content.active {
+            opacity: 1;
+            pointer-events: all;
+            height: auto;
+        }
+
+        .footer {
+            background-color: rgba(255, 127, 80, 0.55);
+        }
+
+        .footer_container {
+            padding: 5px 0px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer_M p {
+            margin: 0px;
+            text-align: center;
+            line-height: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="Navbar_section">
+        <div class="navbar_Logo">
+            <div class="navbarlogo_container">
+                <a href="../index.html"><img class="navbarlogo_img" src="../img/00-頁首/logo/logo02.png" alt=""></a>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="navbar" class="navbar-nav">
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./01_關於普拉伯 合併.html">關於我們</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./02_優質美食.html">優質美食</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./03_美味據點.html">美味餐點</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./04_最新消息.html">最新消息</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./05_集團品牌 合併.html">集團品牌</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./06_聯絡我們.html">聯絡我們</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.104.com.tw/company/1a2x6bjt2r">人才招募</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col_padding">
+                        <button type="button"
+                            class="btn btn-outline-warning tab_btn active badge-warning">蘇維拉莊園</button>
+                    </div>
+                    <div class="col-12 col-md-6 col_padding">
+                        <button type="button" class="btn btn-outline-warning tab_btn">普拉伯義大利坊</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="tab_contents">
+            <div class="tab_content active">
+                <div class="title_contain">
+                    <span>【蘇維拉莊園】</span>
+                </div>
+
+                <section class="section_1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="icon_img">
+                                <a href="http://www.sudvista.com/"><img src="../img/icon/icon_home.png" alt=""></a>
+                                <a href="https://www.facebook.com/sudvista/"><img src="../img/icon/icon_fb.png"
+                                        alt=""></a>
+                                <a href="https://www.instagram.com/sud_vista/"><img src="../img/icon/icon_ig.png"
+                                        alt=""></a>
+                            </div>
+                            <img class="main_img" src="../img/05-集團品牌/01-蘇維拉莊園.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section_2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-10 col_padding_sec2">
+                                <p>
+                                    隱入樹林中走過天空步道聽著鳥兒們的低喃、瀑布水流的聲音空氣中夾帶著淡淡的花香，抬頭那一望無際的景色，正是我夢想中的莊園。我們期許打造一座屬於每個人的夢想莊園，當你進到樹屋時可以遠離社會的紛擾，一杯咖啡搭配一個祕境，層層山巒的環抱以及鳥瞰南庄中港溪流，是一個可以讓你放鬆且療癒心靈的祕境
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="container">
+                    <hr>
+                </div>
+
+                <section class="section_3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-10 text_contain">
+                                <p>民宿訂房專線：0932-331-510</p>
+                                <p>開放入園時間：<br>
+                                    平日09:30－18:00｜假日09:00－18:00
+                                </p>
+                                <p>地址：<br>
+                                    苗栗縣南庄鄉田美村16鄰四灣92號（124乙縣道7.6公里處右轉）
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="tab_content">
+                <div class="title_contain">
+                    <span>【普拉伯義大利坊】</span>
+                </div>
+
+                <section class="section_1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="icon_img">
+                                <a href="http://www.bravopp.com.tw/index.php?lang=tw"><img
+                                        src="../img/icon/icon_home.png" alt=""></a>
+                                <a href="https://www.facebook.com/BFans/"><img src="../img/icon/icon_fb.png" alt=""></a>
+                            </div>
+                            <img class="main_img" src="../img/05-集團品牌/02-普拉伯義大利坊.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section_2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-10 col_padding_sec2">
+                                <p>
+                                    普拉伯義大利坊以安心的食材、舒適的空間用「Warm House」為理念<br>
+                                    我們想提供在密集都市裡可以放鬆的空間，一個可以輕鬆聊天的家、一個你想為了愛的人辦派對的家、一個你想跟家人共進晚餐的家，每一位顧客都是我們的家人，我們想跟每一位家人一起共度重要的場合一起過節一起分享生活的大小事
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="container">
+                    <hr>
+                </div>
+
+                <section class="section_3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 text_contain">
+                                <p>【竹北文興店】</p>
+                                <p>Tel： 03-6577575</p>
+                                <p>地址：新竹縣竹北市文興路一段273號1樓</p>
+                            </div>
+                            <div class="col-6 text_contain">
+                                <p>【苗栗頭份店】</p>
+                                <p>Tel：037-593838</p>
+                                <p>地址：苗栗縣頭份市東民路186號1-2F</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_L">
+                <img width="75" src="../img/01-關於普拉伯/設計理念/普拉雄.png" alt="">
+            </div>
+            <div class="footer_M">
+                <p><small>美味據點：竹北文興店 | 苗栗頭份店 <br>
+                        義大利麵 ‧ 披薩 ‧ 焗烤 ‧ 燉飯 ‧ 下午茶 ‧ 親子 ‧ 商務 ‧ 慶生 <br>
+                        免費服務電話：0800-526-889 | 客服信箱：service@bravopp.com.tw<br>
+                        ©版權聲明</small>
+                </p>
+            </div>
+            <div class="footer_R">
+                <img width="75" src="../img/01-關於普拉伯/設計理念/普拉雄.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- 用 jQuery CDN 連結 (網路連結) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js.map"></script>
+
+    <!-- Swiper JS -->
+    <script src="../package/js/swiper.min.js"></script>
+
+    <script>
+
+        $(".tab_btn").click(function () {
+            //拿掉所有人的active
+            $(".tab_btn").removeClass("active badge-warning");
+
+            //加上自己按鈕的active
+            $(this).addClass("active badge-warning");
+
+            //找到是第幾個
+            var index = $(".tab_btn").index(this);
+
+            console.log(index);
+            $(".tab_content").removeClass("active");
+
+            //加上自己內容的active
+            $(`.tab_content:nth-child(${index + 1})`).addClass("active");
+
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            // 取得導覽列元素頂端位置
+            const navbarTop = $(".Navbar_section").offset();
+            // console.log(navbarTop);
+            $(document).scroll(function () {
+                if ($(document).scrollTop() > navbarTop.top) {
+                    $(".Navbar_section").addClass("fixed");
+                } else {
+                    $(".Navbar_section").removeClass("fixed");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

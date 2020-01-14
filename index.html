@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首頁</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 auto;
+            background-color: rgb(219, 189, 150);
+            color: rgb(94, 66, 30);
+            font-family: arial, verdana, helvetica, tahoma, Sans-serif;
+            overflow-x: hidden;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .header_Logo {
+            width: 100%;
+            height: 65px;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(187, 143, 86, 0.6);
+            position: absolute;
+            z-index: 2;
+
+        }
+
+        .banner_contain {
+            width: 100vw;
+            height: 90vh;
+        }
+
+        .banner_img img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            min-height: 100%;
+        }
+
+
+        .scroll {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: -220px;
+            left: 0px;
+            z-index: 2;
+        }
+
+        .banner_scroll {
+            scroll-behavior: smooth;
+        }
+
+        @media screen and (max-width:768px) {
+            .scroll {
+                top: -160px;
+            }
+        }
+
+        .Navbar_section {
+            background-color: rgb(219, 189, 150);
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0px;
+            z-index: 20;
+        }
+
+        #navbar_Logo {
+            width: 100vw;
+            height: 20vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbarlogo_container {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbarlogo_img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            background-size: cover;
+        }
+
+        #navbar_title {
+            margin: auto;
+            border: 1px solid rgb(94, 66, 30);
+            margin-top: 10px;
+        }
+
+        .col_padding {
+            display: flex;
+            justify-content: center;
+        }
+
+        #navbar_title .col_padding {
+            padding: 0 40px;
+        }
+
+        .section_1_img {
+            width: 60%;
+        }
+
+        main section {
+            margin-bottom: 30px;
+        }
+
+        .section_1_L {
+            padding: 20px 60px;
+            line-height: 35px;
+            text-align: justify;
+        }
+
+        .section_1_L h1 {
+            padding: 10px 0px;
+        }
+
+
+        .button_position {
+            float: right;
+        }
+
+        .button_border {
+            color: rgb(167, 75, 39);
+            border: 1px solid rgb(167, 75, 39);
+            padding: 5px 0px;
+        }
+
+        .section_2_border {
+            padding: 30px;
+            padding-bottom: 45px;
+            border: 1px solid rgb(167, 75, 39, 0.8);
+            margin: 0px 50px;
+        }
+
+        .section_2_border h5 {
+            text-align: center;
+        }
+
+        .title {
+            margin-bottom: 25px;
+        }
+
+        .title_border {
+            color: rgb(167, 75, 39);
+            border: 2px double rgb(167, 75, 39);
+            padding: 5px;
+        }
+
+        .section_2 .swiper_img {
+            width: 90%;
+        }
+
+        .section_2_R {
+            padding-top: 25px;
+            line-height: 30px;
+            text-align: justify;
+            color: rgb(94, 66, 30);
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+            .section_2_R {
+                display: flex;
+            }
+        }
+
+        .section_2_R h5 {
+            text-align: center;
+        }
+
+        .swiper-pagination-bullet {
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+            color: #000;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .swiper-pagination-bullet-active {
+            color: #fff;
+            background: #007aff;
+        }
+
+        .section_3 {
+            margin: 40px auto;
+        }
+
+        .section_3_contain {
+            width: 100vw;
+            height: 65vh;
+        }
+
+        @media screen and (max-width:992px) {
+            .section_3_contain {
+                height: 55vh;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .section_3_contain {
+                height: 40vh;
+            }
+        }
+
+        .section_3 iframe {
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        .section_4 .title_border {
+            color: rgb(167, 75, 39);
+            border: 2px double rgb(167, 75, 39);
+            padding: 5px;
+        }
+
+        .section_4_title {
+            margin: 40px auto;
+        }
+
+        .section_4 a:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        .footer {
+            color: rgb(94, 66, 30);
+            background-color: rgba(255, 127, 80, 0.55);
+        }
+
+
+        .footer_container {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer_LR {
+            display: flex;
+            align-content: center;
+        }
+
+        .footer_M p {
+            margin: 0px;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .footer_p02 {
+            display: none;
+        }
+
+        @media screen and (max-width:768px) {
+            .footer_p01 {
+                display: none;
+            }
+
+            .footer_p02 {
+                display: block;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="header_Logo">
+            <img height=65px src="./img/00-頁首/logo/普拉伯義大利坊(logo2).png" alt="">
+        </div>
+    </header>
+
+    <div class="swiper-container banner_contain swiper_banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <picture class="banner_img">
+                    <source srcset="./img/00-頁首/banner/banner01.png" media="(min-width: 992px)" />
+                    <source srcset="./img/00-頁首/banner/banner01_2.png" media="(min-width: 768px)" />
+                    <img src="./img/00-頁首/banner/banner01_3.png" alt="">
+                </picture>
+            </div>
+            <div class="swiper-slide">
+                <picture class="banner_img">
+                    <source srcset="./img/00-頁首/banner/banner02.png" media="(min-width: 992px)" />
+                    <source srcset="./img/00-頁首/banner/banner02_2.png" media="(min-width: 768px)" />
+                    <img src="./img/00-頁首/banner/banner02_3.png" alt="">
+                </picture>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="scroll">
+        <a href="#navbar_Logo">
+            <img width="200" class="banner_scroll" src="./img/00-頁首/scrolldown02.png" alt="">
+        </a>
+    </div>
+
+    <div class="Navbar_section">
+        <div id="navbar_Logo">
+            <div class="navbarlogo_container">
+                <a href="./index.html"><img class="navbarlogo_img" src="./img/00-頁首/logo/logo02.png" alt=""></a>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="navbar_title" class="navbar-nav">
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./html/01_關於普拉伯 合併.html">關於我們</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./html/02_優質美食.html">優質美食</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./html/03_美味據點.html">美味據點</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./html/04_最新消息.html">最新消息</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./html/05_集團品牌 合併.html">集團品牌</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./html/06_聯絡我們.html">聯絡我們</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.104.com.tw/company/1a2x6bjt2r">人才招募</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <section class="section_1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 section_1_L">
+                        <h1 data-aos="fade-down-right" data-aos-delay="500">Bravo！</h1>
+                        <div class="d-flex justify-content-center">
+                            <div data-aos="fade-down-right" data-aos-delay="500">
+                                <p>Bravo！道盡了「普拉伯義大利坊」想給予顧客們的感受。 普拉伯義大利坊以安心的食材、舒適的空間用「Warm House」為理念<br>
+                                    我們想提供在密集都市裡可以放鬆的空間，一個可以輕鬆聊天的家、一個你想為了愛的人辦派對的家、一個你想跟家人共進晚餐的家，每一位顧客都是我們的家人，我們想跟每一位家人一起共度重要的場合一起過節一起分享生活的大小事
+                                </p>
+                                <div class="button_position">
+                                    <a href="./html/01_關於普拉伯 合併.html"><span class="button_border">&emsp;more&emsp;</span></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-down-left" data-aos-delay="600" class="col-12 col-md-6 d-flex justify-content-center">
+                        <img class="section_1_img" src="./img/00-頁首/品牌故事大標.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_2 container">
+            <div class="container">
+                <div data-aos="flip-down" data-aos-delay="600" class="swiper-container swiper_section_2">
+                    <div class="swiper-wrapper">
+                        <div id="slide_01" class="swiper-slide d-flex justify-content-center">
+                            <div class="d-flex flex-wrap section_2_border">
+
+                                <h5 class="title col-12">
+                                    <span class="title_border">人氣餐點</span>
+                                </h5>
+
+                                <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
+                                    <img class="swiper_img" src="./img/00-頁首/人氣餐點/人氣餐點01.jpg" alt="">
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <div class="section_2_R">
+                                        <div class="col-12 col-md-6 col-lg-12">
+                                            <h5>【現烤鮮味雞塊】</h5>
+                                            <p>嚴選新鮮雞腿肉以特調醬料醃漬六小時，立即冷藏後再冷凍，讓雞塊入味，將最頂級的美味傳達給顧客。雞塊為現點現烤，現烤滋味一口咬下肉質鮮嫩多汁，美味令人吮指
+                                            </p>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 col-lg-12">
+                                            <h5>【旗艦海陸沙拉】</h5>
+                                            <p>旗艦海陸沙拉，可以吃到肥美鮮蝦、Ｑ彈烏賊以及煙燻鴨胸，搭配奧利塔義大利陳年葡萄醋，清爽可口。還有鹹豬肉、香烤雞肉及經典凱薩沙拉，凱薩醬無添加任何一滴水分，完全手工製作，使用義大利第一品牌奧莉塔Olitalia初榨冷壓橄欖油(Extra
+                                                virgin olive oil) 製作，健康無負擔</p>
+                                            <div class="button_position">
+                                                <a href="./html/02_優質美食.html"><span
+                                                        class="button_border">&emsp;more&emsp;</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="slide_02" class="swiper-slide d-flex justify-content-center">
+                            <div class="d-flex flex-wrap section_2_border">
+
+                                <h5 class="title col-12">
+                                    <span class="title_border">人氣餐點</span>
+                                </h5>
+
+                                <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
+                                    <img class="swiper_img" src="./img/00-頁首/人氣餐點/人氣餐點02.jpg" alt="">
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <div class="section_2_R">
+                                        <div class="col-12 col-md-6 col-lg-12">
+                                            <h5>【拿坡里風味海鮮義大利麵】</h5>
+                                            <p>酸酸甜甜的紅醬與鮮蝦、烏賊與蛤蜊等嚴選海鮮搭配，散發出濃郁和諧的美味，是義大利麵愛好者的首選。加入洋蔥、大蒜等食材烹煮，搭配義大利進口De麵條，呈現絕佳風味
+                                            </p>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 col-lg-12">
+                                            <h5>【墨西哥辣椒鹹豬肉披薩】</h5>
+                                            <p>普拉伯自製餅皮，由墨西哥辣椒，搭配juicy的鳳梨，讓辣味溫和，搭配Q彈有嚼勁傳統手法醃製的客家鹹豬肉，再加上普拉伯獨家四種乳酪絲起司，牽絲口感加上香酥餅皮，讓您一口皆一口，蹦出義式新火花，給您新滋味享受
+                                            </p>
+                                            <div class="button_position">
+                                                <a href="./html/02_優質美食.html"><span
+                                                        class="button_border">&emsp;more&emsp;</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="slide_03" class="swiper-slide d-flex justify-content-center">
+                            <div class="d-flex flex-wrap section_2_border">
+
+                                <h5 class="title col-12">
+                                    <span class="title_border">人氣餐點</span>
+                                </h5>
+
+                                <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
+                                    <img class="swiper_img" src="./img/00-頁首/人氣餐點/人氣餐點03.jpg" alt="">
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <div class="section_2_R">
+                                        <div class="col-12 col-md-6 col-lg-12">
+                                            <h5>【我的寶貝餐】</h5>
+                                            <p>為您的小寶貝精心打造專屬寶貝餐，有每日湯、手工麵包、黃金脆薯、煙燻雞翅、義大利筆尖麵（經典肉醬／奶油嫩雞）、甜點、飲料，以及只送不賣的當日小玩具，讓小朋友營養滿分，樂趣滿分
+                                            </p>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 col-lg-12">
+                                            <h5>【午茶系列】</h5>
+                                            <p>全天候供應
+                                                普拉伯給您午茶新選擇，有現烤鬆餅、聖代、普拉伯烘培甜點及人氣蜜糖吐司。香蕉巧克力蜜糖吐司，搭上明治冰淇淋微酥冰熱口感，一口接一口，保證讓您一家人都愛上！優閒的下午時光，是不是該好好放鬆一下呢？到普拉伯義大利坊來份蜜糖吐司及咖啡吧~展開屬於自己的浪漫小確幸
+                                            </p>
+                                            <div class="button_position">
+                                                <a href="./html/02_優質美食.html"><span
+                                                        class="button_border">&emsp;more&emsp;</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_3">
+            <div class="container section_3_contain">
+                <iframe data-aos="zoom-in" data-aos-delay="600" src="https://www.youtube.com/embed/bkMMv8dF7Cw" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="section_4">
+            <div data-aos="zoom-in" data-aos-delay="600" class="container">
+                <h5 class="section_4_title"><span class="title_border">集團品牌</span></h5>
+                <div class="row">
+
+                    <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                        <a href="./html/05_集團品牌 合併.html"><img class="col-8" src="./img/00-頁首/相關企業/蘇維拉.png" alt=""></a>
+                    </div>
+
+                    <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                        <a href="./html/05_集團品牌 合併.html"><img class="col-8" src="./img/00-頁首/相關企業/普拉伯.png" alt=""></a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_LR">
+                <img width=75px src="./img/01-關於普拉伯/設計理念/普拉雄.png" alt="">
+            </div>
+            <div class="footer_M">
+                <p class="footer_p01"><small>美味據點：竹北文興店 | 苗栗頭份店 <br>
+                        義大利麵 ‧ 披薩 ‧ 焗烤 ‧ 燉飯 ‧ 下午茶 ‧ 親子 ‧ 商務 ‧ 慶生 <br>
+                        免費服務電話：0800-526-889 | 客服信箱：service@bravopp.com.tw<br>
+                        ©版權聲明</small>
+                </p>
+
+                <p class="footer_p02"><small>美味據點：<br>
+                        竹北文興店 | 苗栗頭份店 <br>
+                        義大利麵 ‧ 披薩 ‧ 焗烤 ‧ 燉飯 ‧ 下午茶 ‧ 親子 ‧ 商務 ‧ 慶生 <br>
+                        免費服務電話：0800-526-889 <br>
+                        客服信箱：service@bravopp.com.tw<br>
+                        ©版權聲明</small>
+                </p>
+            </div>
+            <div class="footer_LR">
+                <img width=75px src="./img/01-關於普拉伯/設計理念/普拉雄.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- AOS.js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <script>
+        $(document).ready(function () {
+            // 取得導覽列元素頂端位置
+            const navbarTop = $(".Navbar_section").offset();
+
+            $(document).scroll(function () {
+                if ($(document).scrollTop() >= navbarTop.top) {
+                    $(".Navbar_section").addClass("fixed");
+                } else {
+                    $(".Navbar_section").removeClass("fixed");
+                }
+            });
+        });
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper_banner', {
+            loop: true,
+
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+
+        });
+
+        var swiper = new Swiper('.swiper_section_2', {
+
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + '</span>';
+                },
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>

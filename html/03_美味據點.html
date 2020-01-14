@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>美味據點</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 auto;
+            background-color: rgb(219, 189, 150);
+            color: rgb(94, 66, 30);
+            overflow-x: hidden;
+        }
+
+        .Navbar_section {
+            background-color: rgb(219, 189, 150);
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0px;
+            z-index: 20;
+        }
+
+        .navbar_Logo {
+            width: 100vw;
+            height: 20vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbarlogo_container {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbarlogo_img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            background-size: cover;
+        }
+
+        #navbar {
+            margin: 0 auto;
+            border: 1px solid rgb(94, 66, 30);
+            margin-top: 10px;
+        }
+
+        .col_padding {
+            display: flex;
+            justify-content: center;
+        }
+
+        #navbar .col_padding {
+            padding: 0 40px;
+        }
+
+
+        .title_border {
+            color: rgb(167, 75, 39);
+            border: 1px solid rgb(167, 75, 39);
+            padding: 5px;
+        }
+
+        .section_2 {
+            margin: 45px 0px;
+        }
+
+        .title_contain {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .section_2 span {
+            font-weight: bold;
+            
+        }
+
+        .icon_img01 {
+            float: right;
+            margin: 5px 0px;
+        }
+
+        .icon_img02 {
+            float: left;
+            margin: 5px 0px;
+        }
+
+        .section_2 p {
+            text-align: center;
+            line-height: 35px;
+        }
+
+        .section_2 .text_contain {
+            margin: auto;
+        }
+
+        .col_padding_img {
+            margin: auto;
+        }
+
+        .main_img {
+            width: 100%;
+        }
+
+        .footer {
+            background-color: rgba(255, 127, 80, 0.55);
+        }
+
+        .footer_container {
+            padding: 5px 0px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer_M p {
+            margin: 0px;
+            text-align: center;
+            line-height: 30px ;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="Navbar_section">
+        <div class="navbar_Logo">
+            <div class="navbarlogo_container">
+                <a href="../index.html"><img class="navbarlogo_img" src="../img/00-頁首/logo/logo02.png" alt=""></a>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="navbar" class="navbar-nav">
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./01_關於普拉伯 合併.html">關於我們</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./02_優質美食.html">優質美食</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./03_美味據點.html">美味餐點</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./04_最新消息.html">最新消息</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./05_集團品牌 合併.html">集團品牌</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./06_聯絡我們.html">聯絡我們</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.104.com.tw/company/1a2x6bjt2r">人才招募</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <section class="section_2">
+            <div class="container">
+                <div class="title_contain"><span>【竹北 文興店】</span></div>
+                <div class="row">
+                    <div class="col-12 col-md-6 text_contain">
+                        <span>營業時間</span>
+                        <div>
+                            <p>平日<br>
+                                午餐 11：30～14：30<br>
+                                晚餐 17：00～21：30
+                            </p>
+
+                            <p>假日<br>
+                                全天候營業11：30～21：30<br>
+                                最後點餐時間21：00
+                            </p>
+
+                            <p>地址：新竹縣竹北市文興路一段273號1樓<br>
+                                Tel：03-6577575｜Fax：03-6681858
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-5 col_padding_img">
+                        <div class="icon_img01">
+                            <a href="https://www.facebook.com/BFans/"><img src="../img/icon/icon_fb.png" alt=""></a>
+                            <a
+                                href="https://www.google.com/maps/place/%E6%99%AE%E6%8B%89%E4%BC%AF%E7%BE%A9%E5%A4%A7%E5%88%A9%E5%9D%8A+%E7%AB%B9%E5%8C%97%E6%96%87%E8%88%88%E5%BA%97/@24.8090064,121.0316594,17z/data=!4m12!1m6!3m5!1s0x34683655691bb583:0x45686ebc40b03d4!2z5pmu5ouJ5Lyv576p5aSn5Yip5Z2KIOerueWMl-aWh-iIiOW6lw!8m2!3d24.8091217!4d121.0317289!3m4!1s0x34683655691bb583:0x45686ebc40b03d4!8m2!3d24.8091217!4d121.0317289">
+                                <img src="../img/icon/icon_map.png" alt=""></a>
+                        </div>
+                        <img class="main_img" src="../img/03-美味據點/竹北文興店.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <hr>
+        </div>
+
+        <section class="section_2">
+            <div class="container">
+                <div class="title_contain"><span>【苗栗 頭份店】</span></div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col_padding_img">
+                        <div class="icon_img02">
+                            <a href="https://www.facebook.com/bravotf/"><img src="../img/icon/icon_fb.png" alt=""></a>
+                            <a href="https://www.google.com/maps/place/%E6%99%AE%E6%8B%89%E4%BC%AF%E7%BE%A9%E5%A4%A7%E5%88%A9%E5%9D%8A+-+%E8%8B%97%E6%A0%97%E9%A0%AD%E4%BB%BD%E5%BA%97/@24.689459,120.9001753,17z/data=!3m1!4b1!4m5!3m4!1s0x34684cc9efeb856b:0xfeab585a0fb2d3c3!8m2!3d24.689459!4d120.902364"><img
+                                    src="../img/icon/icon_map.png" alt=""></a>
+                        </div>
+                        <img class="main_img" src="../img/03-美味據點/苗栗頭份店.png" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 text_contain">
+                        <span>營業時間</span>
+                        <div>
+                            <p>平假日<br>
+                                11：30～21：30<br>
+                                （全天候供餐，21：00最後點餐）
+                            </p>
+
+                            <p>地址：苗栗縣頭份市東民路186號1-2F<br>
+                                Tel：037-593838｜Fax：037-593839
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_L">
+                <img width="75" src="../img/01-關於普拉伯/設計理念/普拉雄.png" alt="">
+            </div>
+            <div class="footer_M">
+                <p><small>美味據點：竹北文興店 | 苗栗頭份店 <br>
+                        義大利麵 ‧ 披薩 ‧ 焗烤 ‧ 燉飯 ‧ 下午茶 ‧ 親子 ‧ 商務 ‧ 慶生 <br>
+                        免費服務電話：0800-526-889 | 客服信箱：service@bravopp.com.tw<br>
+                        ©版權聲明
+                </p>
+            </div>
+            <div class="footer_R">
+                <img width="75" src="../img/01-關於普拉伯/設計理念/普拉雄.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js.map"></script>
+
+    <!-- Swiper JS -->
+    <script src="../package/js/swiper.min.js"></script>
+
+    <!-- <script>
+        $(document).ready(function () {
+            const navbarTop = $(".Navbar_section").offset();
+            $(document).scroll(function () {
+                if ($(document).scrollTop() > navbarTop.top) {
+                    $(".Navbar_section").addClass("fixed");
+                } else {
+                    $(".Navbar_section").removeClass("fixed");
+                }
+            });
+        });
+    </script> -->
+</body>
+
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>關於普拉伯 合併</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(219, 189, 150);
+            margin: 0 auto;
+            line-height: 35px;
+            overflow-x: hidden;
+        }
+
+        .Navbar_section {
+            background-color: rgb(219, 189, 150);
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0px;
+            z-index: 20;
+        }
+
+        .navbar_Logo {
+            width: 100vw;
+            height: 20vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbarlogo_container {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbarlogo_img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            background-size: cover;
+        }
+
+        #navbar {
+            margin: 0 auto;
+            border: 1px solid rgb(94, 66, 30);
+            margin-top: 10px;
+        }
+
+        .col_padding {
+            display: flex;
+            justify-content: center;
+        }
+
+        #navbar .col_padding {
+            padding: 0 40px;
+        }
+
+        .section_1 button {
+            margin: 20px 0px;
+            color: rgb(167, 75, 39);
+            border-color: rgb(167, 75, 39);
+            padding: 5px 30px;
+        }
+
+        .col_padding_sec2 {
+            margin:auto;
+        }
+
+
+        .section_2 p {
+            text-align: justify;
+            color: rgb(94, 66, 30);
+            padding: 25px;
+            line-height: 50px;
+        }
+
+        .section_2 h5 {
+            text-align: center;
+            color: rgb(167, 75, 39);
+        }
+
+        .main_img {
+            width: 85%;
+            margin: 25px auto;
+        }
+
+        /*關於普拉伯_核心價值03 */
+
+        .section_2_03 p {
+            text-align: center;
+            color: rgb(94, 66, 30);
+            margin: 30px;
+            line-height: 50px;
+        }
+
+        .section_2_03 h5 {
+            text-align: center;
+            color: rgb(167, 75, 39);
+        }
+
+        /*關於普拉伯_設計理念04 */
+        .section_2_04 {
+            margin: 20px 0px;
+        }
+
+        .sectionContain_2_04{
+            padding: 20px;
+        }
+
+        .section_2_04 p {
+            color: rgb(94, 66, 30);
+            text-align: justify;
+            line-height: 40px;
+        }
+
+        .section_2_04 p span {
+            margin: 20px;
+            color: rgb(167, 75, 39);
+            font-weight: bold;
+        }
+
+
+        .section_2_04 h5 {
+            color: rgb(167, 75, 39);
+            text-align: center;
+        }
+
+        .section_2_04 .col_padding {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .section_2_04 .main_img {
+            width: 50%;
+        }
+
+
+        .tab_content {
+            opacity: 0;
+            pointer-events: none;
+            height: 0;
+            overflow: hidden;
+            transition: 1s opacity;
+        }
+
+        .tab_content.active {
+            opacity: 1;
+            pointer-events: all;
+            height: auto;
+        }
+
+
+        .footer {
+            color: rgb(94, 66, 30);
+            background-color: rgba(255, 127, 80, 0.55);
+        }
+
+        .footer_container {
+            padding: 5px 0px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer_M p {
+            margin: 0px;
+            text-align: center;
+            line-height: 30px ;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="Navbar_section">
+        <div class="navbar_Logo">
+            <div class="navbarlogo_container">
+                <a href="../index.html"><img class="navbarlogo_img" src="../img/00-頁首/logo/logo02.png" alt=""></a>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="navbar" class="navbar-nav">
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./01_關於普拉伯 合併.html">關於我們</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./02_優質美食.html">優質美食</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./03_美味據點.html">美味餐點</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./04_最新消息.html">最新消息</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./05_集團品牌 合併.html">集團品牌</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./06_聯絡我們.html">聯絡我們</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-1.5 col_padding">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.104.com.tw/company/1a2x6bjt2r">人才招募</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <section class="section_1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 col_padding">
+                        <button type="button" class="btn btn-outline-warning tab_btn active badge-warning">經營理念</button>
+                    </div>
+                    <div class="col-3 col_padding">
+                        <button type="button" class="btn btn-outline-warning tab_btn">品牌故事</button>
+                    </div>
+                    <div class="col-3 col_padding">
+                        <button type="button" class="btn btn-outline-warning tab_btn">核心價值</button>
+                    </div>
+                    <div class="col-3 col_padding">
+                        <button type="button" class="btn btn-outline-warning tab_btn">設計理念</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="tab_contents">
+            <!-- 關於普拉伯_01 -->
+            <div class="tab_content active">
+                <section class="section_2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-10 col_padding_sec2">
+                                <p>
+                                    普拉伯股份有限公司擁有10年餐飲經驗，設立 HACCP
+                                    等級中央廚房，嚴謹的食安控管及SOP標準作業，不用廚師背景也能開餐廳。品牌據點遍佈於台北、新竹、苗栗，並榮獲台灣微軟公司網路票選「台灣行動工作者最佳工作餐廳」，創造企業間口碑行銷
+                                </p>
+                                <h5>普拉伯義大利坊，滿足每個家庭的期待</h5>
+                                <p>秉持美味、品質、專業、服務的四大理念，並以家人的思維出發，細心觀察及對待每一位客人。發現孩子年紀小找不到合適餐點、長者牙口不好無法吃堅硬的食物，普拉伯因而研發更多樣化的料理，以餐點關懷年長者與小孩，並貼心設置媽媽哺乳室、規劃兒童活動區域。從食材到空間，讓大人盡情品享義大利美食極致風味，也讓孩子找到他們的歡樂滋味
+                                </p>
+                                <p>
+                                    當您來到普拉伯，你將發現餐廳不只是餐廳，它可以是故事屋、可以是童話城，還能是親子互動的幸福樂園。三代齊聚共度佳節的溫馨時光，舉杯慶祝結婚週年的夫妻，一同合照歡渡寶寶週歲的大家庭，都是普拉伯義大利坊裡最美的風景
+                                </p>
+                                <h5>普拉伯相信，味蕾的記憶會因分享而美好<br>
+                                    家人滿足的笑容永遠是餐點中最無可取代的調味料
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section_3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col_padding">
+                                <img class="main_img" src="../img/01-關於普拉伯/經營理念/經營理念01.jpg" alt="">
+                            </div>
+                            <div class="col-12 col-md-6 col_padding">
+                                <img class="main_img" src="../img/01-關於普拉伯/經營理念/經營理念02.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 關於普拉伯_02 -->
+            <div class="tab_content">
+                <section class="section_2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-10 col_padding_sec2">
+                                <p>
+                                    在普拉伯熱情與溫馨瀰漫的氛圍背後，有著老闆親身體驗的故事，創辦人張總夫婦有三名子女，回想這幾年帶小孩出外用餐，總是擔心孩子坐不住、不吃飯，在餐廳嬉戲受傷，或影響到其他顧客。原本快樂用餐的家庭時光，反而疲憊不堪。近年許多店家為維護用餐品質，立下禁止孩童吵鬧的標語，而能讓小孩子盡情玩樂的速食餐廳，又無法在飲食上顧及營養均衡，因此決定自己開創理想中的餐飲品牌
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section_3">
+                    <div class="container">
+                        <div class="row">
+                            <img class="main_img" src="../img/01-關於普拉伯/品牌故事.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 關於普拉伯_03 -->
+            <div class="tab_content">
+                <section class="section_2_03">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-10 col_padding_sec2">
+
+                                <h5>【Family 家庭】</h5>
+                                <p>
+                                    不論是顧客給予的建議、訴求，我們以客為尊用心聆聽<br>
+                                    給予顧客完善且友善的用餐經驗
+                                </p>
+
+                                <h5>【Friendly 友善】</h5>
+                                <p>
+                                    堅持使用義大利進口食材，與在地優質農魚牧等養殖產業結盟，給予每道料理美味的靈魂
+                                </p>
+
+                                <h5>【Flavour 美味】</h5>
+                                <p>
+                                    結合友善的家庭和核心價值，提供整體環境的友善氛圍<br>
+                                    希望留在記憶裡的不只有味蕾的美味，還有我們所傳遞的企業風格
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section_3">
+                    <div class="container">
+                        <div class="row">
+                            <img class="main_img" src="../img/01-關於普拉伯/企業核心價值.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 關於普拉伯_04 -->
+            <div class="tab_content">
+                <section class="section_2_04">
+                    <div class="container sectionContain_2_04">
+                        <div class="row">
+                            <div class="col-12 col-md-4 col_padding">
+                                <img width="40%" src="../img/01-關於普拉伯/設計理念/logo.png" alt="">
+                            </div>
+                            <div class="col-12 col-md-8 col_padding">
+                                <h5>【Logo設計理念】</h5>
+                                <p>由B和R的造型結合出四滴醬汁，匯具出普拉伯的精神<br>
+                                    四滴代表：<br>
+                                    <span>用心的料理 堅持的品質<br></span>
+                                    <span>付出愛的關懷 專業的服務態度<br></span>
+                                    其中蘊含了蝴蝶造型，意義象徵著像著未來飛翔，帶者夢想卓越；另一滴醬汁延伸出刀工，像徵者普拉伯對料理的細膩與苛求，並表現普拉伯在自製品生產上的專業，分別為奶油白醬、蕃茄紅醬、青醬及經典肉醬
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>  
+                <section class="section_2_04">
+                    <div class="container sectionContain_2_04">
+                        <div class="row">
+                            <div class="col-12 col-md-8 col_padding">
+                                <h5>【普拉熊設計理念】</h5>
+                                <p>普拉伯義大利坊精神代表 『BRAVO BEAR 普拉熊』，在2007.06.05，普拉伯義大利坊『 Bravo Bear普拉熊 』誕生
+                                    代表著BRAVO 的信念與精神，而普拉伯義大利坊就像是溫暖的第二個家，滿足每個家庭的期待！<br>
+                                    <span>B ─ Bear 代表普拉伯給您的安全感<br></span>
+                                    <span>R ─ Rose 代表普拉伯裡充滿著溫馨氛圍<br></span>
+                                    <span>A ─ Apple 代表普拉伯散發出的熱情活力<br></span>
+                                    <span>V ─ Victor 代表普拉伯永不放棄勇往直前<br></span>
+                                    <span>O ─ Olive 代表普拉伯以最純淨的心待人</span>
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-4 col_padding">
+                                <img class="main_img" src="../img/01-關於普拉伯/設計理念/普拉雄.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_L">
+                <img width="75" src="../img/01-關於普拉伯/設計理念/普拉雄.png" alt="">
+            </div>
+            <div class="footer_M">
+                <p><small>美味據點：竹北文興店 | 苗栗頭份店 <br>
+                        義大利麵 ‧ 披薩 ‧ 焗烤 ‧ 燉飯 ‧ 下午茶 ‧ 親子 ‧ 商務 ‧ 慶生 <br>
+                        免費服務電話：0800-526-889 | 客服信箱：service@bravopp.com.tw<br>
+                        ©版權聲明</small>
+                </p>
+            </div>
+            <div class="footer_R">
+                <img width="75" src="../img/01-關於普拉伯/設計理念/普拉雄.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- 用 jQuery CDN 連結 (網路連結) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            // 取得導覽列元素頂端位置
+            const navbarTop = $(".Navbar_section").offset();
+            // console.log(navbarTop);
+            $(document).scroll(function () {
+                if ($(document).scrollTop() > navbarTop.top) {
+                    $(".Navbar_section").addClass("fixed");
+                } else {
+                    $(".Navbar_section").removeClass("fixed");
+                }
+            });
+        });
+    </script>
+
+    <script>
+
+        $(".tab_btn").click(function () {
+            //拿掉所有人的active
+            $(".tab_btn").removeClass("active badge-warning");
+
+            //加上自己按鈕的active
+            $(this).addClass("active badge-warning");
+
+            //找到是第幾個
+            var index = $(".tab_btn").index(this);
+
+            console.log(index);
+            $(".tab_content").removeClass("active");
+
+            //加上自己內容的active
+            $(`.tab_content:nth-child(${index + 1})`).addClass("active");
+
+        });
+
+    </script>
+</body>
+
+</html>
