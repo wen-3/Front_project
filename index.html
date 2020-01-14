@@ -91,7 +91,7 @@
 
 
         .navbarlogo_img {
-            width:auto;
+            width: auto;
             height: 125px;
             background-size: cover;
         }
@@ -115,7 +115,7 @@
             width: auto;
             height: auto;
             max-width: 60%;
-            max-height: 100%;
+            max-height: 80%;
         }
 
         main section {
@@ -164,6 +164,13 @@
             padding: 5px;
         }
 
+        @media screen and (max-width:576px) {
+            .section_2_border {
+                padding: 30px;
+                margin: 0px ;
+            }
+        }
+
         .section_2 .swiper_img {
             width: 90%;
         }
@@ -183,6 +190,17 @@
 
         .section_2_R h5 {
             text-align: center;
+        }
+
+        @media screen and (max-width:576px) {
+
+            .section_2_R h5,span {
+                font-size: 16px;
+            }
+
+            .section_2 p {
+                font-size: 12px;
+            }
         }
 
         .swiper-pagination-bullet {
@@ -250,26 +268,33 @@
 
 
         .footer_container {
-            padding: 10px;
+            /* padding: 10px; */
             display: flex;
             justify-content: space-between;
+
         }
 
         @media screen and (max-width:576px) {
-            .footer_container{
+            .footer_container {
                 justify-content: center;
             }
         }
 
         .footer_LR {
             display: flex;
-            align-content: center;
+            align-items: center;
         }
 
         @media screen and (max-width:576px) {
-            .footer_LR{
+            .footer_LR {
                 display: none;
             }
+        }
+
+        .footer_img {
+            width: auto;
+            height: auto;
+            max-height: 100px;
         }
 
         .footer_M p {
@@ -291,7 +316,6 @@
                 display: block;
             }
         }
-
     </style>
 
 </head>
@@ -395,13 +419,15 @@
                                     我們想提供在密集都市裡可以放鬆的空間，一個可以輕鬆聊天的家、一個你想為了愛的人辦派對的家、一個你想跟家人共進晚餐的家，每一位顧客都是我們的家人，我們想跟每一位家人一起共度重要的場合一起過節一起分享生活的大小事
                                 </p>
                                 <div class="button_position">
-                                    <a href="./html/01_關於普拉伯 合併.html"><span class="button_border">&emsp;more&emsp;</span></a>
+                                    <a href="./html/01_關於普拉伯 合併.html"><span
+                                            class="button_border">&emsp;more&emsp;</span></a>
                                 </div>
 
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-down-left" data-aos-delay="600" class="col-12 col-md-6 d-flex justify-content-center">
+                    <div data-aos="fade-down-left" data-aos-delay="600"
+                        class="col-12 col-md-6 d-flex justify-content-center">
                         <img class="section_1_img" src="./img/00-頁首/品牌故事大標.png" alt="">
                     </div>
                 </div>
@@ -524,8 +550,8 @@
 
         <section class="section_3">
             <div class="container section_3_contain">
-                <iframe data-aos="zoom-in" data-aos-delay="600" src="https://www.youtube.com/embed/bkMMv8dF7Cw" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                <iframe data-aos="zoom-in" data-aos-delay="600" src="https://www.youtube.com/embed/bkMMv8dF7Cw"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
         </section>
@@ -536,11 +562,13 @@
                 <div class="row">
 
                     <div class="col-12 col-md-6 d-flex align-items-center">
-                        <a href="./html/05_集團品牌 合併.html" class="d-flex align-items-center justify-content-center"><img class="col-8" src="./img/00-頁首/相關企業/蘇維拉.png" alt=""></a>
+                        <a href="./html/05_集團品牌 合併.html" class="d-flex align-items-center justify-content-center"><img
+                                class="col-8" src="./img/00-頁首/相關企業/蘇維拉.png" alt=""></a>
                     </div>
 
                     <div class="col-12 col-md-6 d-flex align-items-center">
-                        <a href="./html/05_集團品牌 合併.html" class="d-flex align-items-center justify-content-center"><img class="col-8" src="./img/00-頁首/相關企業/普拉伯.png" alt=""></a>
+                        <a href="./html/05_集團品牌 合併.html" class="d-flex align-items-center justify-content-center"><img
+                                class="col-8" src="./img/00-頁首/相關企業/普拉伯.png" alt=""></a>
                     </div>
 
                 </div>
@@ -553,7 +581,7 @@
     <footer class="footer">
         <div class="container footer_container">
             <div class="footer_LR">
-                <img width="auto" height="150px" src="./img/01-關於普拉伯/設計理念/普拉雄.png" alt="">
+                <img class="footer_img" src="./img/01-關於普拉伯/設計理念/普拉雄.png" alt="">
             </div>
             <div class="footer_M">
                 <p class="footer_p01"><small>美味據點：竹北文興店 | 苗栗頭份店 <br>
@@ -571,7 +599,7 @@
                 </p>
             </div>
             <div class="footer_LR">
-                <img width="auto" height="150px" src="./img/01-關於普拉伯/設計理念/普拉雄.png" alt="">
+                <img class="footer_img" src="./img/01-關於普拉伯/設計理念/普拉雄.png" alt="">
             </div>
         </div>
     </footer>

@@ -118,15 +118,46 @@
         }
 
         .footer_container {
-            padding: 5px 0px;
+            padding: 10px;
             display: flex;
             justify-content: space-between;
+        }
+
+        @media screen and (max-width:576px) {
+            .footer_container{
+                justify-content: center;
+            }
+        }
+
+        .footer_LR {
+            display: flex;
+            align-content: center;
+        }
+
+        @media screen and (max-width:576px) {
+            .footer_LR{
+                display: none;
+            }
         }
 
         .footer_M p {
             margin: 0px;
             text-align: center;
-            line-height: 30px ;
+            line-height: 30px;
+        }
+
+        .footer_p02 {
+            display: none;
+        }
+
+        @media screen and (max-width:768px) {
+            .footer_p01 {
+                display: none;
+            }
+
+            .footer_p02 {
+                display: block;
+            }
         }
 
     </style>
@@ -262,18 +293,26 @@
 
     <footer class="footer">
         <div class="container footer_container">
-            <div class="footer_L">
-                <img width="75" src="../img/01-關於普拉伯/設計理念/普拉雄.png" alt="">
+            <div class="footer_LR">
+                <img class="footer_img" src="./img/01-關於普拉伯/設計理念/普拉雄.png" alt="">
             </div>
             <div class="footer_M">
-                <p><small>美味據點：竹北文興店 | 苗栗頭份店 <br>
+                <p class="footer_p01"><small>美味據點：竹北文興店 | 苗栗頭份店 <br>
                         義大利麵 ‧ 披薩 ‧ 焗烤 ‧ 燉飯 ‧ 下午茶 ‧ 親子 ‧ 商務 ‧ 慶生 <br>
                         免費服務電話：0800-526-889 | 客服信箱：service@bravopp.com.tw<br>
-                        ©版權聲明
+                        ©版權聲明</small>
+                </p>
+
+                <p class="footer_p02"><small>美味據點：<br>
+                        竹北文興店 | 苗栗頭份店 <br>
+                        義大利麵 ‧ 披薩 ‧ 焗烤 ‧ 燉飯 ‧ 下午茶 ‧ 親子 ‧ 商務 ‧ 慶生 <br>
+                        免費服務電話：0800-526-889 <br>
+                        客服信箱：service@bravopp.com.tw<br>
+                        ©版權聲明</small>
                 </p>
             </div>
-            <div class="footer_R">
-                <img width="75" src="../img/01-關於普拉伯/設計理念/普拉雄.png" alt="">
+            <div class="footer_LR">
+                <img class="footer_img" src="./img/01-關於普拉伯/設計理念/普拉雄.png" alt="">
             </div>
         </div>
     </footer>
