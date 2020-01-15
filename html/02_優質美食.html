@@ -257,18 +257,8 @@
                                     <div class="modal-body">
                                         <!-- Swiper -->
                                         <div class="swiper-container model_swiper01">
-                                            <div class="swiper-wrapper">
-                                                <img class="swiper-slide" src="../img/02-優質美食/竹北文興店菜單/菜單_1.JPG" alt="">
-                                                <img class="swiper-slide" src="../img/02-優質美食/竹北文興店菜單/菜單_2.JPG" alt="">
-                                                <img class="swiper-slide" src="../img/02-優質美食/竹北文興店菜單/菜單_3.JPG" alt="">
-                                                <img class="swiper-slide" src="../img/02-優質美食/竹北文興店菜單/菜單_4.JPG" alt="">
-                                                <img class="swiper-slide" src="../img/02-優質美食/竹北文興店菜單/菜單_5.JPG" alt="">
-                                                <img class="swiper-slide" src="../img/02-優質美食/竹北文興店菜單/菜單_6.JPG" alt="">
-                                                <img class="swiper-slide" src="../img/02-優質美食/竹北文興店菜單/菜單_7.JPG" alt="">
-                                                <img class="swiper-slide" src="../img/02-優質美食/竹北文興店菜單/菜單_8.JPG" alt="">
-                                                <img class="swiper-slide" src="../img/02-優質美食/竹北文興店菜單/菜單_9.JPG" alt="">
-                                                <img class="swiper-slide" src="../img/02-優質美食/竹北文興店菜單/菜單_10.JPG" alt="">
-                                                <!-- <img class="swiper-slide" alt=""> -->
+                                            <div class="swiper-wrapper menu_1">
+
                                             </div>
                                             <!-- Add Arrows -->
                                             <div class="swiper-button-next"></div>
@@ -301,18 +291,8 @@
                                     <div class="modal-body">
                                         <!-- Swiper -->
                                         <div class="swiper-container model_swiper02">
-                                            <div class="swiper-wrapper">
-                                                <img class="swiper-slide" src="../img/02-優質美食/苗栗頭份店菜單/菜單_1.JPG" alt="">
-                                                <img class="swiper-slide" src="../img/02-優質美食/苗栗頭份店菜單/菜單_2.JPG" alt="">
-                                                <img class="swiper-slide" src="../img/02-優質美食/苗栗頭份店菜單/菜單_3.JPG" alt="">
-                                                <img class="swiper-slide" src="../img/02-優質美食/苗栗頭份店菜單/菜單_4.JPG" alt="">
-                                                <img class="swiper-slide" src="../img/02-優質美食/苗栗頭份店菜單/菜單_5.JPG" alt="">
-                                                <img class="swiper-slide" src="../img/02-優質美食/苗栗頭份店菜單/菜單_6.JPG" alt="">
-                                                <img class="swiper-slide" src="../img/02-優質美食/苗栗頭份店菜單/菜單_7.JPG" alt="">
-                                                <img class="swiper-slide" src="../img/02-優質美食/苗栗頭份店菜單/菜單_8.JPG" alt="">
-                                                <img class="swiper-slide" src="../img/02-優質美食/苗栗頭份店菜單/菜單_9.JPG" alt="">
-                                                <img class="swiper-slide" src="../img/02-優質美食/苗栗頭份店菜單/菜單_10.JPG" alt="">
-                                                <!-- <img class="swiper-slide" alt=""> -->
+                                            <div class="swiper-wrapper menu_2">
+
                                             </div>
                                             <!-- Add Arrows -->
                                             <div class="swiper-button-next"></div>
@@ -423,6 +403,7 @@
 
     <script>
         var swiper = new Swiper('.model_swiper01', {
+            autoHeight: true,
             observer: true,
             observeParents: true,
             loop: true,
@@ -433,6 +414,7 @@
         });
 
         var swiper = new Swiper('.model_swiper02', {
+            autoHeight: true,
             observer: true,
             observeParents: true,
             loop: true,
@@ -441,9 +423,7 @@
                 prevEl: '.swiper-button-prev',
             },
         });
-    </script>
 
-    <script>
         $(document).ready(function () {
             // 取得導覽列元素頂端位置
             const navbarTop = $(".Navbar_section").offset();
@@ -456,7 +436,23 @@
                 }
             });
         });
+
+
+        //菜單圖片for迴圈
+        var slide_img = document.querySelector('.menu_1')
+        var slide_img2 = document.querySelector('.menu_2')
+
+        for(var i = 1; i < 29 ;i++){
+            slide_img.innerHTML += `<img class="swiper-slide" src="../img/02-優質美食/竹北文興店菜單/菜單_${i}.JPG" alt="">`
+        }
+
+        for(var i = 1; i < 27 ;i++){
+            slide_img2.innerHTML += `<img class="swiper-slide" src="../img/02-優質美食/苗栗頭份店菜單/菜單_${i}.JPG" alt="">`
+        }
+        
     </script>
+
+    
 
 </body>
 
