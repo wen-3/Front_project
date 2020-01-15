@@ -100,10 +100,10 @@
             position:relative;
         }
 
-        #gotonav {
+        /* #gotonav {
             position: absolute;
             bottom: 50%;
-        }
+        } */
 
 
         .navbarlogo_img {
@@ -730,10 +730,10 @@
             $(document).scroll(function () {
                 if ($(document).scrollTop() > navbarTop.top) {
                     $(".mobile").addClass("fixed");
-                    $(".mobile").addClass("d-block");
+                    // $(".mobile").addClass("d-block");
                 } else {
                     $(".mobile").removeClass("fixed");
-                    $(".mobile").removeClass("d-block");
+                    // $(".mobile").removeClass("d-block");
                 }
             });
         });
