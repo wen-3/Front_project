@@ -97,6 +97,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            position:relative;
+        }
+
+        #gotonav {
+            position: absolute;
+            bottom: 50%;
         }
 
 
@@ -371,6 +377,7 @@
     <div class="Navbar_section">
         <div id="navbar_Logo">
             <a href="./index.html">
+                <div id="gotonav"></div>
                 <div class="navbarlogo_container">
                     <img class="navbarlogo_img" src="./img/00-頁首/logo/logo02.png" alt="">
                 </div>
@@ -703,7 +710,7 @@
     <script>
         $(document).ready(function () {
             // 取得導覽列元素頂端位置
-            const navbarTop = $(".navbarlogo_container").offset();
+            const navbarTop = $("#gotonav").offset();
             $(document).scroll(function () {
                 if ($(document).scrollTop() > navbarTop.top) {
                     $(".mobile").addClass("fixed");
